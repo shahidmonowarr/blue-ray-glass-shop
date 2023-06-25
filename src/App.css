@@ -11,10 +11,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  height: 120vh;
   max-width: 1280px;
   background-color: #f1f1f1;
-  margin: 0 auto;
+  margin: 30px auto;
   text-align: center;
 }
 
@@ -30,26 +30,45 @@ h2 {
   margin-top: 0;
 }
 
-.glasses-list {
-  list-style-type: none;
-  padding: 0;
+.glasses-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
 }
 
-.glasses-list li {
-  margin-bottom: 10px;
+.glasses-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 200px;
+  padding: 10px;
+  background-color: #f0f0f0;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.glasses-image {
+  width: 100% ;
+  overflow: hidden;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.glasses-name {
+  margin-top: 10px;
+  font-size: 18px;
+  font-weight: bold;
 }
 
 .glasses-button {
+  margin-top: 10px;
   padding: 8px 16px;
-  background-color: #3498db;
+  background-color: #007bff;
   color: #fff;
   border: none;
   border-radius: 4px;
   cursor: pointer;
-}
-
-.glasses-button:hover {
-  background-color: #2980b9;
 }
 
 .modal {
