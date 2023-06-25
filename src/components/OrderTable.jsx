@@ -24,6 +24,7 @@ const OrderTable = ({ orders }) => {
         <thead>
           <tr>
             <th>Order ID</th>
+            <th>Order Name</th>
             <th>Customer Name</th>
             <th>Delivery Type</th>
           </tr>
@@ -32,6 +33,7 @@ const OrderTable = ({ orders }) => {
           {currentOrders.map((order) => (
             <tr key={order.id}>
               <td>{order.id}</td>
+              <td>{order.glassName}</td>
               <td>{order.customerName}</td>
               <td>{order.deliveryType}</td>
             </tr>

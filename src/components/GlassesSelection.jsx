@@ -18,6 +18,7 @@ const GlassesSelection = ({ glasses, onPurchase }) => {
         id: Date.now(),
         customerName,
         deliveryType,
+        glassName: selectedGlasses.name,
       };
       onPurchase(order);
       setCustomerName("");
